@@ -3,10 +3,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h2>Hello World !</h2>
-    </div>
+    <Greeting toWhom="India"/>
   );
+}
+
+function Greeting(props){
+  return (
+    <div className="App">
+      <h2>Hello {props.toWhom} !</h2>
+    </div>
+  )
 }
 
 export default App;
