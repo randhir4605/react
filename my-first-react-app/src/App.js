@@ -3,14 +3,14 @@ import './App.css';
 
 function App() {
   return (
-    <Greeting toWhom="India"/>
+    <Greeting toWhom="India" secondParam="What's going on !"/>
   );
 }
 
 function Greeting(props){
   return (
     <div className="App">
-      <h2>Hello {props.toWhom} !</h2>
+      <h2>Hello {props.toWhom} ! {props.secondParam}</h2>
     </div>
   )
 }
