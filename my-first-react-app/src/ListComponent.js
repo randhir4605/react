@@ -1,10 +1,17 @@
+function ListItem(props){
+    return <li>{props.element.item}</li>
+}
 function ListComponent(){
-    const arr=['Apple','Ball','Cat'];
+    const arr=[
+        {id:1,item:'Apple'},
+        {id:2,item:'Ball'},
+        {id:3,item:'Cat'}
+    ];
     return (
         <>
             <div>
                 <ul>
-                    {arr.map((item) => <li>{item}</li>)}
+                    {arr.map((i) => <ListItem element={i}/>)}
                 </ul>
             </div>
         </>
