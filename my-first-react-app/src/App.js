@@ -1,9 +1,9 @@
 
 import './App.css';
-import ListComponent from './ListComponent';
+import MyForm from './form';
 
 function App() {
-   return <ListComponent/>;
+   return <MyForm/>;
 }
 
 export default App;
