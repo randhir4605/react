@@ -1,5 +1,5 @@
 function ListItem(props){
-    return <li>{props.element.item}</li>
+    return <li>{props.value}</li>
 }
 function ListComponent(){
     const arr=[
@@ -11,7 +11,7 @@ function ListComponent(){
         <>
             <div>
                 <ul>
-                    {arr.map((i) => <ListItem element={i}/>)}
+                    {arr.map((i) => <ListItem key={i.id} value={i.item}/>)}
                 </ul>
             </div>
         </>
